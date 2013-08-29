@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:stretchColumns="1">
+    <TableRow 
+        android:layout_width="fill_parent" >
+        <TextView 
+            android:id="@+id/noTxv"
+            android:gravity="right"
+            android:width="20dp"
+            android:layout_height="wrap_content"/>
+        <TextView 
+            android:id="@+id/nameTxv"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#00FFFF"/>
+        <TextView 
+            android:id="@+id/descriptionTxv"
+            android:gravity="left"
+            android:paddingLeft="3dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#A0FF42"/>
+        <TextView 
+            android:id="@+id/numTxv"
+            android:gravity="right"
+            android:width="30dp"
+            android:paddingLeft="3dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF80"
+            android:textStyle="bold"/>
+        <TextView android:id="@+id/priceTxv"
+            android:gravity="right"
+            android:width="40dp"
+            android:paddingLeft="3dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FF8080"
+            android:textStyle="bold"/>
+        <CheckBox 
+            android:id="@+id/checkCkb"
+            android:checked="true"
+            android:paddingRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </TableRow>
+    
+
+</TableLayout>

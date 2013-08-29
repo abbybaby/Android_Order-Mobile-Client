@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    tools:context=".PayActivity" >
+
+   <EditText
+        android:id="@+id/payOrderCodeEdt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入订单编号"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+     <Button
+            android:id="@+id/payQueryBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/search"
+            android:text="查询" />
+
+        <Button
+            android:id="@+id/payBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/money"
+            android:text="结账" />
+
+        <Button
+            android:id="@+id/payCancleBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/not"
+            android:text="取消" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/paySumTxv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="#FF8080"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/payOrderCodeTxv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#D5BFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/payTableCodeTxv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#D5BFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/payWaiterCodeTxv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#D5BFFF"
+            android:textStyle="bold" 
+            />
+        <TextView android:id="@+id/payCustomersTxv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#D5BFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/payOrderTimeTxv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#D5BFFF"/>
+    <TextView 
+        android:id="@+id/payDescriptionTxv"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#D5BFFF"/>
+    <ListView android:id="@+id/payOrderedLtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg1"
+        android:visibility="gone"></ListView>
+</LinearLayout>

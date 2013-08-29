@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1" >
+
+        <GridView
+            android:id="@+id/foodTypeGdv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" >
+        </GridView>
+
+        <Spinner
+            android:id="@+id/foodSpn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/numEdt"
+                android:layout_height="wrap_content"
+                android:hint="数量"
+                android:singleLine="true"
+                android:width="60dp" />
+
+            <EditText
+                android:id="@+id/foodDescriptionEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="备注" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
